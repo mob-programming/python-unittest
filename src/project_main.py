@@ -13,3 +13,6 @@ class ProjectMain:
 
     def set_greeting(self, greeting: str = 'Hello user!') -> None:
         self.data.setdefault('greeting', greeting)
+
+    if __name__ == '__main__':
+        pass
