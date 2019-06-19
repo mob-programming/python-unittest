@@ -39,9 +39,33 @@ class TestNode(TestCase):
         actual = node.get_data()
         self.assertEqual(expected, actual)
 
+        expected = 'B'
+        node = Node(expected)
+        actual = node.get_data()
+        self.assertEqual(expected, actual)
+
 
 class TestLinkedList(TestCase):
     def test_list_initializes_as_empty(self):
         ll = LinkedList()
-        self.fail()
+        is_empty = ll.is_empty()
+        self.assertTrue(is_empty)
 
+    # def test_get_node_by_index(self):
+    #     ll = LinkedList()
+    #     node = Node(5)
+    #     ll.append(node)
+
+    def test_list_appends_node_to_list(self):
+        ll = LinkedList()
+        node = Node(5)
+        ll.append(node)
+        self.assertEqual(ll.head.next, None)
+        node_2 = Node(7)
+        ll.append(node_2)
+        self.assertEqual(ll.head, node)
+        self.assertEqual(ll.head.next, node_2)
+        self.assertEqual(ll.head.next.next, None)
+        node_3 = Node(3)
+        ll.append(node_3)
+        self.assertEqual(ll.head.next.next, node_3)
