@@ -3,16 +3,16 @@
 
 class ProjectMain:
 
-    data = dict()
-
     def __init__(self) -> None:
         pass
 
-    def get_greeting(self) -> str:
-        return self.data.get('greeting')
-
-    def set_greeting(self, greeting: str = 'Hello user!') -> None:
-        self.data.setdefault('greeting', greeting)
-
-    if __name__ == '__main__':
-        pass
+    @staticmethod
+    def process_integer(current_integer):
+        if current_integer % 15 == 0:
+            return "FizzBuzz"
+        elif current_integer % 3 == 0:
+            return "Fizz"
+        elif current_integer % 5 == 0:
+            return "Buzz"
+        else:
+            return current_integer
