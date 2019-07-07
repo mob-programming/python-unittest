@@ -8,7 +8,8 @@ Python >= 3.6
 
 ## Setup
 
-1. [Mirror](https://help.github.com/en/articles/duplicating-a-repository) this repo
-3. Do your work on the mirror
-4. Enjoy!
+1. Clone this repo
+2. Create a branch
+3. Do your work on the branch
+4. Push
 
