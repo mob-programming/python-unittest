@@ -1,7 +1,5 @@
 from unittest import TestCase
 from src.main import MobWorkshop as Mob
-from src.node import Node
-from src.linkedList import LinkedList
 
 # Mob Programming Challenge
 # -------------------------
@@ -21,9 +19,12 @@ from src.linkedList import LinkedList
 # Stretch goals
 # -------------
 #   - return a sorted version of the list as an array
-#   -
 #   - ensure that the list is self-sorting by alphanumeric order (by ASCII value)
-#   -
+#
+# Guidelines
+# ----------
+#   - use TDD to implement the solution
+#   - think more about what makes good mobbing than racing to complete the solution
 
 
 class TestMobWorkshop(TestCase):
@@ -31,17 +32,4 @@ class TestMobWorkshop(TestCase):
         mob = Mob()
         self.assertTrue(mob.pass_initial_test(), "Do the smallest thing to make this pass.")
 
-
-class TestNode(TestCase):
-    def test_node_initializes_with_data(self):
-        expected = 'A'
-        node = Node(expected)
-        actual = node.get_data()
-        self.assertEqual(expected, actual)
-
-
-class TestLinkedList(TestCase):
-    def test_list_initializes_as_empty(self):
-        ll = LinkedList()
-        self.fail()
 
