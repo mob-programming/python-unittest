@@ -33,3 +33,4 @@ class TestMobWorkshop(TestCase):
         self.assertTrue(mob.pass_initial_test(), "Do the smallest thing to make this pass.")
 
 
+
