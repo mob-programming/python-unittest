@@ -6,6 +6,8 @@ python + unittest starter repo
 
 Python >= 3.6
 
+It is recommended to use a virtualenv for any projects.
+
 ## Setup
 
 1. Clone this repo
