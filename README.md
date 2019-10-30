@@ -8,7 +8,7 @@ To walk through the commits in this workshop, see [https://github.com/mob-progra
 
 ## The challenge
 
-The coding challenge for this workshop was to solve FizzBuzz, as a mob, using test driven development.
+The coding challenge for this workshop was to solve FizzBuzz, as a mob, using [test driven development](https://www.jamesshore.com/Blog/Red-Green-Refactor.html).
 The team followed a strict [_driver-navigator_](https://mobprogramming.org/mob-programming-basics/) pattern of mobbing with the timer set to 4 minutes.
 
 For each positive integer _i_ in (1, n):
