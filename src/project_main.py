@@ -23,4 +23,11 @@ class ProjectMain:
 
     def is_number(self, param):
         return False
+
+    def fizzbuzz(self, param):
+        if param % 3 == 0:
+            return "Fizz"
+
+
+    
     
