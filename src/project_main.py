@@ -25,7 +25,9 @@ class ProjectMain:
         return False
 
     def fizzbuzz(self, param):
-        if param % 3 == 0:
+        if param % 3 == 0 and param % 5 == 0:
+            return "FizzBuzz"
+        elif param % 3 == 0:
             return "Fizz"
         elif param % 5 == 0:
             return "Buzz"
