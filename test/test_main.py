@@ -22,3 +22,8 @@ class TestMain(TestCase):
         actual = main.fizzbuzz(3)
         self.assertEqual(expected, actual, 'Not fizz')
 
+    def test_buzz_if_five(self):
+        main = ProjectMain()
+        expected = "Buzz"
+        actual = main.fizzbuzz(5)
+        self.assertEqual(expected, actual, 'Not buzz')
