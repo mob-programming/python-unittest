@@ -10,3 +10,9 @@ class TestMain(TestCase):
         expected = f'Hello user!'
         actual = main.get_greeting()
         self.assertEqual(expected, actual, 'Not the greeting I was expecting')
+    def test_if_divisible(self):
+        main = ProjectMain()
+        expected = False
+        actual = main.is_number('f')
+        self.assertEqual(expected, actual, 'Not a number')
+

@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+### FIZZ BUZZ
+
+#Fizz Buzz
+
+#F
+
+
 
 class ProjectMain:
 
@@ -13,3 +20,7 @@ class ProjectMain:
 
     def set_greeting(self, greeting: str = 'Hello user!') -> None:
         self.data.setdefault('greeting', greeting)
+
+    def is_number(self, param):
+        return False
+    
