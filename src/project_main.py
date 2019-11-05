@@ -9,9 +9,10 @@
 
 class ProjectMain:
 
-    def __init__(self, param) -> None:
-        for i in range(1, param+1):
-            print(self.fizzbuzz(i))
+    def __init__(self, param: int=None) -> None:
+        if param:
+            for i in range(1, param+1):
+                print(self.fizzbuzz(i))
 
     def fizzbuzz(self, param):
         if param % 3 == 0 and param % 5 == 0:
