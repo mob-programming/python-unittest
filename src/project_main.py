@@ -4,4 +4,4 @@
 class GameBoard(object):
 
     def get_number_of_cells(self):
-        pass
+        return 0
