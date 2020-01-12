@@ -1,3 +1,4 @@
+import unittest
 from unittest import TestCase
 from src.main import MobWorkshop as Mob
 from src.node import Node
@@ -31,7 +32,7 @@ class TestMobWorkshop(TestCase):
         mob = Mob()
         self.assertTrue(mob.pass_initial_test(), "Do the smallest thing to make this pass.")
 
-
+@unittest.skip('not yet implemented')
 class TestNode(TestCase):
     def test_node_initializes_with_data(self):
         expected = 'A'
@@ -39,7 +40,7 @@ class TestNode(TestCase):
         actual = node.get_data()
         self.assertEqual(expected, actual)
 
-
+@unittest.expectedFailure
 class TestLinkedList(TestCase):
     def test_list_initializes_as_empty(self):
         ll = LinkedList()

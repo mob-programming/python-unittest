@@ -5,3 +5,4 @@ class MobWorkshop:
 
     def pass_initial_test(self):
         pass
+
