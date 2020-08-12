@@ -9,9 +9,6 @@ class TestMain(TestCase):
         #Create a game of Life board
         # set (1,1) to be alive
         # dead next cycle
-
-        main = ProjectMain()
-
-        expected = f'Hello user!'
-        actual = main.get_greeting()
-        self.assertEqual(expected, actual, 'Not the greeting I was expecting')
+        board = Board(3, 3)
+        cellState = True
+        self.assertEqual(cellState, False, 'Cell should be dead')
