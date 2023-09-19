@@ -5,7 +5,6 @@ python + unittest starter repo
 ## Requirements
 
 Python >= 3.6
-
 It is recommended to use a virtualenv for any projects.
 
 ## Setup
@@ -14,4 +13,3 @@ It is recommended to use a virtualenv for any projects.
 2. Create a branch
 3. Do your work on the branch
 4. Push
-
